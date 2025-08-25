@@ -11,15 +11,61 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("My First Flutter Container")),
 
-        // Image Widget in Flutter
-        // body: Image.asset('assets/images/flutter-logo.png')
+        // Coumn Widget in FLutter
+        // body: Column(
+        //   children: [
+        //     Text("A", style: TextStyle(fontSize: 50),),
+        //     Text("B", style: TextStyle(fontSize: 50),),
+        //     Text("C", style: TextStyle(fontSize: 50),),
+        //     Text("D", style: TextStyle(fontSize: 50),),
+        //     Text("E", style: TextStyle(fontSize: 50),),
+        //   ],
+        // ),
 
-        // Resizing and centering image using container and center widget
-        body: Center(
-          child: Container(
-            width: 100,
-            height: 100,
-            child: Image.asset('assets/images/flutter-logo.png'),
+        // Row Widget in Flutter 
+        // body: Row(
+        //   children: <Widget> [
+        //     Text("A", style: TextStyle(fontSize: 50),),
+        //     Text("B", style: TextStyle(fontSize: 50),),
+        //     Text("C", style: TextStyle(fontSize: 50),),
+        //     Text("D", style: TextStyle(fontSize: 50),),
+        //     Text("E", style: TextStyle(fontSize: 50),),
+        //     ElevatedButton(onPressed: () => {} , child: Text("Click Me"))
+        //   ],
+        // ),
+
+      // Main and cross axis alignment in Flutter 
+        // body: Container(
+        //   height: 300,
+        //   child: Row(
+        //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //     crossAxisAlignment: CrossAxisAlignment.end,
+        //     children: <Widget> [
+        //       Text("A", style: TextStyle(fontSize: 50),),
+        //       Text("B", style: TextStyle(fontSize: 50),),
+        //       Text("C", style: TextStyle(fontSize: 50),),
+        //       Text("D", style: TextStyle(fontSize: 50),),
+        //       Text("E", style: TextStyle(fontSize: 50),),
+        //       ElevatedButton(onPressed: () => {} , child: Text("Click Me"))
+        //     ],
+        //   ),
+        // ),
+
+
+        // Main and cross axis alignment in column in Flutter 
+        body: Container(
+          width: 1000,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget> [
+              Text("A", style: TextStyle(fontSize: 50),),
+              Text("B", style: TextStyle(fontSize: 50),),
+              Text("C", style: TextStyle(fontSize: 50),),
+              Text("D", style: TextStyle(fontSize: 50),),
+              Text("E", style: TextStyle(fontSize: 50),),
+              OutlinedButton(onPressed: () => {} , child: Text("Click Me"))
+            ],
           ),
         ),
       ),
