@@ -11,24 +11,17 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("My First Flutter Container")),
 
-        // Button Widget in Flutter
-        // *********Text Button ***************
-        // body: TextButton(
-        //   child: Text("Click Me"),
-        //   onPressed: () => print("Button Pressed"),
-        //   onLongPress: () => print("Long Pressed!!"),
-        //   ),
+        // Image Widget in Flutter
+        // body: Image.asset('assets/images/flutter-logo.png')
 
-        // *********Elevated Button ***************
-        // body: ElevatedButton(
-        //   child: Text("Elevated Button"),
-        //   onPressed: () => print("Elevated Button Clicked!"),
-        // ),
-
-        // *********Outlined Button ***************
-        // body: OutlinedButton(
-        //   child : Text("Outlined Button"),
-        //   onPressed:() => print("Outlined Button Clicked!"),),
+        // Resizing and centering image using container and center widget
+        body: Center(
+          child: Container(
+            width: 100,
+            height: 100,
+            child: Image.asset('assets/images/flutter-logo.png'),
+          ),
+        ),
       ),
     );
   }
